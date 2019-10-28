@@ -18,5 +18,11 @@ steps:
 - script: |
     npm install -g webpack webpack-cli --save-dev
     npm install
-    npm run build && npm run dist
   displayName: 'npm install, npm run build && npm run dist'
+
+- script: |
+    npm run build && npm run dist
+  displayName: 'npm run build && npm run dist'
+
+- publish: ./dist
+  artifact: testing-build
