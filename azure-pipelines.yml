@@ -24,6 +24,3 @@ steps:
     npm run build && npm run dist
   displayName: 'npm run build && npm run dist'
 
-- publish: $(System.DefaultWorkingDirectory)/dist
-  artifact: testing-build
-  displayName: 'Publishing dist'
